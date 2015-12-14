@@ -1,7 +1,16 @@
 <nav>
     <ul>
-        <li><a href="/sessions/new">Log In</a></li>
-        <li><a href="/users/new">Sign Up</a></li>
+        <% if current_user %>
+            <li>Welcome, <%= current_user.username %>!</li>
+            <li><a href="/sessions/delete">Log Out</a></li>
+            <form action="/sessions" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <input id="logout-submit" type="submit" value="Log Out">
+            </form>
+        <% else %>
+            <li><a href="/sessions/new">Log In</a></li>
+            <li><a href="/users/new">Sign Up</a></li>
+        <% end %>
     </ul>
 </nav>
 
