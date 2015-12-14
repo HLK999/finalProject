@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         user.dream_job = params[:dream_job]
         user.if_I_were_fancy = params[:if_I_were_fancy]
         user.favorite_quote = params[:favorite_quote]
-        user.more_info = params[:more_info]
+        user.secret_quality = params[:secret_quality]
         user.save!
         redirect "/users/#{user.id}"
     end

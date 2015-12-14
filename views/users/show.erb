@@ -1,1 +1,51 @@
-i am on the show page
+<nav>
+    <ul>
+        <li><a href="/">Back</a></li>
+    </ul>
+</nav>
+
+<h1 class="turquoise">framed</h1>
+<h2>
+    How to remember your classmates and colleagues<br>
+    (<em>especially</em> if you're still with them).
+</h2>
+
+<img src="<%= @user.avatar %>" alt="picture of <%= @user.username %>">
+
+<p class="turquoise">
+    A picture may be worth a thousand words,<br>
+    <strong>but • it • took • words • to • say • that;</strong>
+    <br>so framed does, too.
+</p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td><%= @user.username %></td>
+    </tr>
+    <tr>
+        <th>Birthplace</th>
+        <td><%= @user.birthplace %></td>
+    </tr>
+    <tr>
+        <th>First Language</th>
+        <td><%= @user.first_lang %></td>
+    </tr>
+    <tr>
+        <th>Dream Job</th>
+        <td><%= @user.dream_job %></td>
+    </tr>
+</table>
+
+<ol>
+    <li>If you were very fancy, what's the first thing you'd do?</li>
+    <div class="answer turquoise"><%= @user.if_I_were_fancy %></div>
+    <li>
+        Favorite quote—be it your own quip or not.
+    </li>
+    <div class="answer turquoise"><%= @user.favorite_quote %></div>
+    <li>
+        What's one thing about you most folks don't know?
+    </li>
+    <div class="answer turquoise"><%= @user.secret_quality %></div>
+</ol>
