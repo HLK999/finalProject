@@ -1,7 +1,7 @@
 require 'bundler'
 Bundler.require(:default)
 
-Dir.glob("./{controllers}/*.rb").each do |file|
+Dir.glob("./{controllers,models}/*.rb").each do |file|
     require file
     puts "require #{file}"
 end
