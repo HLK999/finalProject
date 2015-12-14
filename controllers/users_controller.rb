@@ -15,7 +15,12 @@ class UsersController < ApplicationController
         user.favorite_quote = params[:favorite_quote]
         user.more_info = params[:more_info]
         user.save!
-        redirect '/'
+        redirect "/users/#{user.id}"
+    end
+
+    get '/:id' do
+        @user = User.find(params[:id])
+        erb :'/users/show'
     end
 
 end
