@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
         redirect '/sessions/new' unless user = User.find_by(username: params[:username])
         if user.password == params[:password]
             session[:current_user] = user.id
+            redirect "/users/#{user.id}"
         else
             redirect '/sessions/new'
         end
