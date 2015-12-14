@@ -1,2 +1,2 @@
-# finalProject
-Final WDI Project: Memory App
+# framed
+Final WDI Project: framed

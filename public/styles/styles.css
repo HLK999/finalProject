@@ -15,6 +15,26 @@ body {
     color: #338EB5;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(217, 217, 217);
+}
+
+nav ul {
+    padding: 0;
+    margin: 5px;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    font-weight: 300;
+    padding: 0 10px;
+}
+
 h1, h2 {
    font-weight: 300;
    margin: 0;
