@@ -8,4 +8,5 @@ end
 
 require_relative 'connection'
 
+map('/users'){ run UsersController }
 map('/'){ run ApplicationController }
