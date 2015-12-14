@@ -1,3 +1,79 @@
+/** {
+    border: 1px solid black;
+}*/
+
 html {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.turquoise, td {
+    color: #338EB5;
+}
+
+h1, h2 {
+   font-weight: 300;
+   margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+img + p {
+    letter-spacing: 0.5px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 5px;
+}
+
+img {
+    margin-top: 20px;
+    width: 40%;
+}
+
+table {
+    text-align: left;
+    left: 30%;
+    position: relative;
+    padding: 0;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+ol {
+    list-style-position: inside;
+    text-align: left;
+    padding: 0;
+    position: relative;
+    left: 30%;
+    margin-top: 8.5px;
+    width: 40%;
+}
+
+li {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.answer {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border: 1px solid black;
+    background-color: white;
 }
