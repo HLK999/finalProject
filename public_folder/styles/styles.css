@@ -160,3 +160,7 @@ input {
     width: 5%;
     margin-left: 47.5%;
 }
+
+#logout-submit {
+    display: none;
+}
