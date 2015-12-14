@@ -7,6 +7,10 @@ get '/' do
     erb :index
 end
 
+get '/users/new' do
+
+end
+
 get '/whoa' do
     "whooaaa"
 end
