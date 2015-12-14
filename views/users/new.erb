@@ -1,0 +1,35 @@
+<nav>
+    <ul>
+        <li><a href="/">Back</a></li>
+    </ul>
+</nav>
+
+<h1 id="sign-up">SIGN UP!</h1>
+
+<form id="new-user-form" action="/users" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <label for="birthplace">Birthplace:</label>
+    <input type="text" id="birthplace" name="birthplace"><br>
+    <label for="first_lang">First Language:</label>
+    <input type="text" id="first_lang" name="first_lang"><br>
+    <label for="dream_job">Dream Job:</label>
+    <input type="text" id="dream_job" name="dream_job"><br>
+    <label for="avatar">Picture:</label>
+    <input type="file" id="avatar" name="avatar"><br>
+    <div id="textareas">
+        <p>
+            If you were very fancy, what's the first thing that you would do?
+        </p>
+        <textarea id="if_I_were_fancy" name="if_I_were_fancy"></textarea><br>
+        <p>
+            Favorite quote - being your own quip or not - attributed accordingly:
+        </p>
+        <textarea id="favorite_quote" name="favorite_quote"></textarea><br>
+        <p>One thing about you that most people don't know...</p>
+        <textarea id="secret_quality" name="secret_quality"></textarea><br>
+    </div>
+    <input type="submit" value="Sign Up!">
+</form>
