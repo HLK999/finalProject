@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
     get '/new' do
-        "YOOOOOOOO"
+        erb :'/users/new'
     end
 
 end
