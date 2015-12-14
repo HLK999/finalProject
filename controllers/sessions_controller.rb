@@ -14,4 +14,9 @@ class SessionsController < ApplicationController
         end
     end
 
+    delete '/' do
+        session[:current_user] = nil
+        redirect '/'
+    end
+
 end
