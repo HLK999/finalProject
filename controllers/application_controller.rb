@@ -14,6 +14,10 @@ class ApplicationController < Sinatra::Base
         end
     end
 
+    get '/*/styles.css' do
+        redirect '/styles/styles.css'
+    end
+
     get '/console' do
         binding.pry
     end
