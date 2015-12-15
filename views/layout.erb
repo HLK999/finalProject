@@ -10,5 +10,11 @@
 
     <%= yield %>
 
+    <% if current_user %>
+        <script>
+            document.addEventListener("DOMContentLoaded", prepareLogout);
+        </script>
+    <% end %>
+
 </body>
 </html>
