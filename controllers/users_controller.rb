@@ -31,4 +31,14 @@ class UsersController < ApplicationController
         erb :'/users/edit'
     end
 
+    patch '/:id' do
+        user = User.find(params[:id])
+        user.update(params[:user])
+        if params[:new_password].length > 1
+            user.password=params[:new_password]
+            user.save!
+        end
+        redirect "/users/#{user.id}"
+    end
+
 end
