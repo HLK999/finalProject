@@ -4,6 +4,7 @@
 
 html {
     background-color: rgba(0, 0, 0, 0.15);
+    background-image: url("../images/white_wall.jpg");
 }
 
 body {
@@ -22,6 +23,7 @@ nav {
     width: 100%;
     z-index: 2;
     background-color: rgb(217, 217, 217);
+    background-image: url("../images/white_wall.jpg");
 }
 
 nav ul {
