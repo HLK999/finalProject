@@ -1,10 +1,11 @@
 console.log("I am connected");
 
+
 var prepareLogout = function() {
-    var logOutLink = document.getElementById("logout-link");
-    var logOutSubmit = document.getElementById("logout-submit");
-    logOutLink.addEventListener("click", function(e) {
+    var $logOutLink = $("#logout-link");
+    var $logOutSubmit = $("logout-submit");
+    $logOutLink.click(function(e) {
         e.preventDefault();
-        logOutSubmit.click();
+        $logOutSubmit.click();
     });
 };
