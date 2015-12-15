@@ -7,7 +7,11 @@ class ApplicationController < Sinatra::Base
     enable :sessions, :method_override
 
     get '/' do
-        erb :index
+        if current_user
+            redirect "/users/#{current_user.id}"
+        else
+            erb :index
+        end
     end
 
     get '/console' do
