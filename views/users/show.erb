@@ -14,9 +14,9 @@
                 <input type="hidden" name="_method" value="delete">
                 <input type="submit" id="logout-submit" value="Log Out">
             </form>
-            <form action="/users" method="post">
+            <form action="/users/<%= current_user.id %>" method="post">
                 <input type="hidden" name="_method" value="delete">
-                <input id="delete-submit" type="submit" value="Delete">
+                <input type="submit" id="delete-submit" value="Delete">
             </form>
         <% else %>
             <li><a href="/sessions/new">Log In</a></li>

@@ -23,6 +23,7 @@ class UsersController < ApplicationController
 
     get '/:id' do
         @user = User.find(params[:id])
+        @users = User.order(:username)
         erb :'/users/show'
     end
 
@@ -39,6 +40,12 @@ class UsersController < ApplicationController
             user.save!
         end
         redirect "/users/#{user.id}"
+    end
+
+    delete '/:id' do
+        user = User.find(params[:id])
+        user.delete
+        redirect '/'
     end
 
 end
