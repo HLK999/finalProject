@@ -166,6 +166,6 @@ input {
     margin-left: 47.5%;
 }
 
-#logout-submit {
+#logout-submit, #delete-submit {
     display: none;
 }
