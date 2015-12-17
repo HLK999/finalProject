@@ -6,6 +6,7 @@ class ApplicationController < Sinatra::Base
 
     enable :sessions, :method_override
 
+    # if logged in, then the main page redirects to the logged-in user's homepage.  otherwise it's the llama.
     get '/' do
         if current_user
             redirect "/users/#{current_user.id}"
@@ -14,10 +15,12 @@ class ApplicationController < Sinatra::Base
         end
     end
 
+    # any request ending in 'styles.css' redirects to /styles/styles.css'
     get '/*/styles.css' do
         redirect '/styles/styles.css'
     end
 
+    # for debugging
     get '/console' do
         binding.pry
     end

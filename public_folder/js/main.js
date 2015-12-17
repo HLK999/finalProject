@@ -1,6 +1,4 @@
-console.log("I am connected");
-
-
+// If someone clicks the 'Log Out' link, stop the link from going where it would normally go, instead making the secret 'log out' html form get clicked.  Same for the 'Delete Profile' link as well as the secret 'delete profile' html form.
 var prepareLogout = function() {
     var $logOutLink = $("#logout-link");
     var $logOutSubmit = $("#logout-submit");
@@ -13,9 +11,10 @@ var prepareLogout = function() {
     $deleteLink.click(function(e) {
         e.preventDefault();
         setTimeout(function() {
-            console.log("$deleteSubmit:", $deleteSubmit);
+            document.addEventListener("DOMContentLoaded", prepareLogout);
             $deleteSubmit.click();
         }, 25);
-        logOutSubmit.click();
+        document.removeEventListener("DOMContentLoaded", prepareLogout);
+        $logOutSubmit.click();
     });
 };

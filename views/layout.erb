@@ -9,9 +9,11 @@
 </head>
 <body>
 
+    <!-- Every single html file or .erb file will read from this page first.  When it gets to angle bracket %= yield % angle bracket, it will go read whatever .erb file to which we're actually trying to go.  After that, it'll read the rest of this file.  So all .erb files will have the same DOCTYPE and links above, etc. -->
     <%= yield %>
 
     <% if current_user %>
+        <!-- Call the prepareLogout function once the page's html is finished loading. -->
         <script>
             document.addEventListener("DOMContentLoaded", prepareLogout);
         </script>

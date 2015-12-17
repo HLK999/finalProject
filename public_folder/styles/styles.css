@@ -1,6 +1,7 @@
 /** {
     border: 1px solid red;
-}*/
+} I would turn on this code if I needed to see the boundaries of a given element.
+I totally have more tweaking I wanna do, but I'll do it in the future. What I have is okay for now.*/
 
 html {
     background-color: rgba(0, 0, 0, 0.15);
@@ -62,8 +63,34 @@ img + p {
 img {
     margin-top: 20px;
     width: 40%;
-    border: 2px solid black;
     box-shadow: 10px 10px 5px #888888;
+    border: 4px solid black;
+    background: url(images/gold-frame.png);
+
+}
+
+.users {
+    list-style-type: none;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 20%;
+    height: 80%;
+    padding: 0;
+    overflow: scroll;
+}
+
+.users img {
+    max-width: 75px;
+    display: block;
+    margin: 0;
+}
+
+.username {
+    position: relative;
+    width: 0;
+    left: 10px;
+    top: -50px;
 }
 
 table {
