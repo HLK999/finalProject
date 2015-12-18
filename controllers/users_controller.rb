@@ -24,7 +24,7 @@ class UsersController < ApplicationController
         redirect "/sessions/new"
     end
 
-    # user show page
+    # User show page. Two instance variables. (The alphabetization of username does not seem to have worked. )
     get '/:id' do
         @user = User.find(params[:id])
         @users = User.order(:username)
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
         erb :'/users/edit'
     end
 
-    # store info for edited user, redir to user's homepage
+    # store info for edited user, redirect to user's homepage.
     patch '/:id' do
         user = User.find(params[:id])
         user.update(params[:user])
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
         redirect "/users/#{user.id}"
     end
 
-    # delete a user.  buggy!
+    # delete a user.  Buggy!
     delete '/:id' do
         user = User.find(params[:id])
         user.delete

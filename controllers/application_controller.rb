@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
 
     set :views, File.expand_path("../../views", __FILE__)
     set :public_folder, File.expand_path("../../public_folder", __FILE__)
-
+#made CSS show up consistently. Jinx!
     enable :sessions, :method_override
 
     # if logged in, then the main page redirects to the logged-in user's homepage.  otherwise it's the llama.
@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
         end
     end
 
-    # any request ending in 'styles.css' redirects to /styles/styles.css'
+    # any request ending in 'styles.css' redirects to /styles/styles.css' Yay, stackoverflow! (The asterisk allows anything that ends in styles.css, no matter how many slashes.)
     get '/*/styles.css' do
         redirect '/styles/styles.css'
     end

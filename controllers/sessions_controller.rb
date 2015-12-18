@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
         end
     end
 
-    # Log out; go to Layla.
+    # Log out; go to Layla. So, you log out by sending a delete request to the sessions controller.  Links can only handle get requests, so for that I use an html form.  (But those buttons are ugly, so I hid them.)
     delete '/' do
         session[:current_user] = nil
         redirect '/'

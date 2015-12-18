@@ -1,4 +1,4 @@
-// If someone clicks the 'Log Out' link, stop the link from going where it would normally go, instead making the secret 'log out' html form get clicked.  Same for the 'Delete Profile' link as well as the secret 'delete profile' html form.
+// If someone clicks the 'Log Out' link, this function stops the link from going where it would normally go, instead making the secret 'log out' html form get clicked.  Same for the 'Delete Profile' link as well as the secret 'delete profile' html form.
 var prepareLogout = function() {
     var $logOutLink = $("#logout-link");
     var $logOutSubmit = $("#logout-submit");

@@ -13,7 +13,7 @@
     <%= yield %>
 
     <% if current_user %>
-        <!-- Call the prepareLogout function once the page's html is finished loading. -->
+        <!-- Call the prepareLogout function once the page's html is finished loading. Defined in JS (there isn't much), in public folder...-->
         <script>
             document.addEventListener("DOMContentLoaded", prepareLogout);
         </script>
