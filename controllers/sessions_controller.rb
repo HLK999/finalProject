@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+#in charge of routing for the sessions. 
     # to the login page
     get '/new' do
         erb :'/sessions/new'

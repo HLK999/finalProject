@@ -9,9 +9,9 @@ class User < ActiveRecord::Base
         @password = Password.create(new_password)
         self.password_hash = @password
     end
-    #instance variables in Ruby are accessible through the whole class, not just in this bit of code. 
+    #instance variables in Ruby are accessible through the whole class, not just in this bit of code.
 
-    # Gets a filename, e.g., ("my.photo.jpeg") and returns "images/my.photo2059.jpeg"
+    # Gets a filename, e.g., ("my.photo.jpeg") and returns "images/my.photo2059.jpeg" on account of duplicate-naming possibility. Still want to store on db, though. 
     def format_photo_path(filename)
         split = filename.split(".")
         ext = split.slice!(split.length - 1)

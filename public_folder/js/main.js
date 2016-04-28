@@ -4,7 +4,7 @@ var prepareLogout = function() {
     var $logOutSubmit = $("#logout-submit");
     $logOutLink.click(function(e) {
         e.preventDefault();
-        $logOutSubmit.click();
+        $logOutSubmit.click(); // uses sessions to control logging in and logging out
     });
     var $deleteLink = $("#delete-link");
     var $deleteSubmit = $("#delete-submit");
