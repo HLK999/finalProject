@@ -17,14 +17,20 @@ One or more designated photographer(s) and “reporters,” quite possibly one a
 
 I’ll take a portrait and ask the subject to answer the first four bio lines: name, birthplace, first language, and dream job.
 
-Then I’ll ask several icebreaker questions, beginning with one that my younger son, Jack, asked me when he was six. The subject then can then, if he or she wants, submit additional autobiographic content in the two additional questions.
+Then I’ll ask several icebreaker questions, beginning with one that my younger son, Jack, asked me when he was six. The subject then can then, if he or she wants, submit additional autobiographic content within the bounds of the two additional questions.
 
-If possible, others within the group will be able to add emojis, check marks, or text (again, capped at 200 characters). This is the extent to which others would use the app, at least as of now. (Update: as of 12.17.15, I have not added this functionality... and I'm rather on the fence about doing it at all.)
+If possible, others within the group will be able to add emojis, check marks, or brief text. This "commentary" is the extent to which others would use the app viz. other profiles, at least as of now. (Update: as of 12.17.15, I have not added this functionality... and I'm rather on the fence about doing it at all.)
 
 **Users will be able to:**
 -- sign in
 -- create a profile as described above
+<<<<<<< HEAD
 -- log in to view or edit their profiles AND, importantly, view the profiles of their peers, whether by clicking on their pix or names
 --edit/update or delete their own profiles (they cannot perform these actions on the profiles of others)
 --PhotoShop the hell out of their portraits
 --No avatars allowed: the photo must be a current, recognizable shot of each member of the group. A mugshot is okay, but that may well be TMI, especially if the cohort is in your new job. ; - )
+=======
+-- log in to view or edit their profiles AND, importantly, view the profiles of their peers (whether by clicking on their pix or names)
+--edit/update or delete their own profiles (They cannot perform these actions on the profiles of others.)
+--PhotoShop the hell out of their own portraits
+--No avatars are allowed: the photo must be a current, recognizable shot of each member of the group. A mugshot is okay, but that may well be TMI, especially if the cohort is in your new job. Where, or where, is the font for sarcasm. Comic sans?
